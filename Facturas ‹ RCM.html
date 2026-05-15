@@ -1,0 +1,3057 @@
+<!DOCTYPE html>
+<!-- saved from url=(0073)https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <title>Facturas ‹ RCM</title>
+   <meta name="description" content="FacturaScripts es un software de facturación y contabilidad para pymes. Es software libre bajo licencia GNU/LGPL.">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="generator" content="FacturaScripts">
+   
+   <link rel="shortcut icon" href="https://pacioli.greconsult.com/images/favicon.ico">
+   <link rel="apple-touch-icon" sizes="180x180" href="https://pacioli.greconsult.com/images/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="https://pacioli.greconsult.com/images/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="https://pacioli.greconsult.com/images/favicon-16x16.png">
+   <link rel="manifest" href="https://pacioli.greconsult.com/images/site.webmanifest">
+   <link rel="mask-icon" href="https://pacioli.greconsult.com/images/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+   
+   <link rel="stylesheet" href="./Facturas ‹ RCM_files/bootstrap-yeti.min.css">
+   <link rel="stylesheet" href="./Facturas ‹ RCM_files/font-awesome.min.css">
+   <link rel="stylesheet" href="./Facturas ‹ RCM_files/datepicker.css">
+   <link rel="stylesheet" href="./Facturas ‹ RCM_files/custom.css">
+   <script type="text/javascript" src="./Facturas ‹ RCM_files/jquery.min.js.descarga"></script>
+   <script type="text/javascript" src="./Facturas ‹ RCM_files/bootstrap.min.js.descarga"></script>
+   <script type="text/javascript" src="./Facturas ‹ RCM_files/bootstrap-datepicker.js.descarga" charset="UTF-8"></script>
+   <script type="text/javascript" src="./Facturas ‹ RCM_files/jquery.autocomplete.min.js.descarga"></script>
+   <script type="text/javascript" src="./Facturas ‹ RCM_files/jquery-ui.min.js.descarga"></script>
+   <script type="text/javascript" src="./Facturas ‹ RCM_files/bootbox.min.js.descarga"></script>
+   <script type="text/javascript" src="./Facturas ‹ RCM_files/base.js.descarga"></script>
+   <script type="text/javascript">
+      bootbox.setLocale("es");
+      
+      function show_precio(precio, coddivisa)
+      {
+         coddivisa || ( coddivisa = 'EUR' );
+         
+         if(coddivisa == 'EUR')
+         {
+            
+            return number_format(precio, 2, ',', ' ')+' €';
+            
+         }
+         else
+         {
+            return number_format(precio, 2, ',', ' ');
+         }
+      }
+      function show_numero(numero)
+      {
+         return number_format(numero, 2, ',', ' ');
+      }
+      $(document).ready(function () {
+          $("#b_feedback2").click(function (event) {
+              event.preventDefault();
+              $("#modal_feedback2").modal("show");
+              document.f_feedback.mensaje.focus();
+          });
+      });   
+   </script>
+   
+      
+   
+      
+   
+      
+   
+<style>:root{--backgroundOpacityMurky: rgba(255, 255, 255, 0.95);--onBackgroundLight: rgba(36, 36, 36, 0.10);--background: #FFF;--onBackground: #242424;--accent: #0F71F0;--default-black: rgba(0, 0, 0, 0.00);--backgroundShadow: rgba(0, 0, 0, 0.14);--onAccent: #FFF;--onAccentDisabled: #B2D4FC;--onBackgroundDisabled: #919191;--onBackgroundSecondary: #5B5B5B;--onBackgroundExtraLight: #F4F4F4;--accentHighContrast: #0E68DD;--backgroundButtonDisabled: rgba(68, 68, 68, 0.10);--onBackgroundExtraLight: #F4F4F4;--scrollTrack: #E8E8E8;--scrollThumb: #A1A1A1;--buttonHover: #E0E0E0;--critical: #D40404;--img-logo: url(https://pacioli.greconsult.com/assets/images/logo.d1d5a0b776e710da9bf9.svg);--img-completed: url(https://pacioli.greconsult.com/assets/images/status_ok.d443655b70d223250fa8.svg);--img-alert: url(https://pacioli.greconsult.com/assets/images/alert.474be14797d7e695bcaf.svg);--img-info: url(https://pacioli.greconsult.com/assets/images/info.56a5f71fdc727a40de66.svg);--img-tooltip: url(https://pacioli.greconsult.com/assets/images/tooltip.50ab4baeb9ac63633068.svg);--no-video-img: url(https://pacioli.greconsult.com/assets/images/no-video-illustration.319bd3f600c239b14382.svg)}html[data-gen-theme=dark]{--backgroundOpacityMurky: rgba(0, 0, 0, 0.70);--onBackgroundLight: rgba(255, 255, 255, 0.15);--background: #272727;--onBackground: #FFF;--accent: #3F8DF3;--default-black: rgba(0, 0, 0, 0.00);--backgroundShadow: rgba(0, 0, 0, 0.14);--onAccent: #FFF;--onAccentDisabled: #99C6FB;--onBackgroundDisabled: #8F8F8F;--onBackgroundSecondary: #C7C7C7;--onBackgroundExtraLight: #323232;--accentHighContrast: #3F8DF3;--backgroundButtonDisabled: rgba(68, 68, 68, 0.10);--buttonHover: rgba(255, 255, 255, 0.1);--critical: #FF4242;--onBackgroundExtraLight: #323232;--scrollTrack: #323232;--scrollThumb: #505050;--img-completed: url(https://pacioli.greconsult.com/assets/images/status_ok.90f98be2a1cdcb583c19.svg);--img-alert: url(https://pacioli.greconsult.com/assets/images/alert.bcb86b4c2f4c2b1da9cd.svg);--img-info: url(https://pacioli.greconsult.com/assets/images/info.56a5f71fdc727a40de66.svg);--img-tooltip: url(https://pacioli.greconsult.com/assets/images/tooltip.e5ee59ba4cf836fe189b.svg);--no-video-img: url(https://pacioli.greconsult.com/assets/images/no-video-illustration.56c2d608d73de31d2e45.svg)}@font-face{font-family:"Inter";src:url(https://pacioli.greconsult.com/assets/fonts/Inter-Regular.woff2) format("woff2");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:url(https://pacioli.greconsult.com/assets/fonts/Inter-Medium.woff2) format("woff2");font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:url(https://pacioli.greconsult.com/assets/fonts/Inter-SemiBold.woff2) format("woff2");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:url(https://pacioli.greconsult.com/assets/fonts/Inter-Bold.woff2) format("woff2");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:"Inter";src:url(https://pacioli.greconsult.com/assets/fonts/Inter-ExtraBold.woff2) format("woff2");font-weight:800;font-style:normal;font-display:swap}.video-downloader-iframe-wrap{position:fixed;top:3px;right:3px;z-index:92147483645;width:312px;height:auto;background:var(--backgroundOpacityMurky, rgba(255, 255, 255, 0.95));transition:opacity .2s;border:none;margin-right:10px;overflow:hidden;border-radius:16px;box-shadow:0 12px 40px rgba(0,0,0,.25),0 4px 12px rgba(0,0,0,.15)}.video-downloader-iframe-wrap.rtl{right:auto;left:3px;margin-right:0;margin-left:10px}.video-downloader-iframe{width:100%;height:auto;border:none;border-radius:16px;display:block;transition:opacity .2s;opacity:1;overflow-y:auto;overflow-x:hidden;box-shadow:none;backdrop-filter:none;background:rgba(0,0,0,0)}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy91aS9icmFuZHMvY29tbW9uL3N0eWxlcy90aGVtZS5zY3NzIiwid2VicGFjazovLy4vc3JjL3VpL2NvbW1vbi9zdHlsZXMvaWZyYW1lUG9wdXAuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFHQSxNQUNJLG1EQUFBLENBQ0EsMkNBQUEsQ0FDQSxrQkFBQSxDQUNBLHVCQUFBLENBQ0EsaUJBQUEsQ0FDQSxvQ0FBQSxDQUNBLHVDQUFBLENBQ0EsZ0JBQUEsQ0FDQSwyQkFBQSxDQUNBLCtCQUFBLENBQ0EsZ0NBQUEsQ0FDQSxpQ0FBQSxDQUNBLDZCQUFBLENBQ0Esa0RBQUEsQ0FDQSxpQ0FBQSxDQUNBLHNCQUFBLENBQ0Esc0JBQUEsQ0FDQSxzQkFBQSxDQUNBLG1CQUFBLENBQ0EsbURBQUEsQ0FDQSx3REFBQSxDQUNBLG9EQUFBLENBQ0EsbURBQUEsQ0FDQSxzREFBQSxDQUNBLHVEQUFBLENBR0osMEJBQ0ksNkNBQUEsQ0FDQSw4Q0FBQSxDQUNBLHFCQUFBLENBQ0Esb0JBQUEsQ0FDQSxpQkFBQSxDQUNBLG9DQUFBLENBQ0EsdUNBQUEsQ0FDQSxnQkFBQSxDQUNBLDJCQUFBLENBQ0EsK0JBQUEsQ0FDQSxnQ0FBQSxDQUNBLGlDQUFBLENBQ0EsNkJBQUEsQ0FDQSxrREFBQSxDQUNBLHVDQUFBLENBQ0EsbUJBQUEsQ0FDQSxpQ0FBQSxDQUNBLHNCQUFBLENBQ0Esc0JBQUEsQ0FDQSx3REFBQSxDQUNBLG9EQUFBLENBQ0EsbURBQUEsQ0FDQSxzREFBQSxDQUNBLHVEQUFBLENBR0osV0FDSSxtQkFBQSxDQUNBLDREQUFBLENBQ0EsZUFBQSxDQUNBLGlCQUFBLENBQ0EsaUJBQUEsQ0FHSixXQUNJLG1CQUFBLENBQ0EsNERBQUEsQ0FDQSxlQUFBLENBQ0EsaUJBQUEsQ0FDQSxpQkFBQSxDQUdKLFdBQ0ksbUJBQUEsQ0FDQSw0REFBQSxDQUNBLGVBQUEsQ0FDQSxpQkFBQSxDQUNBLGlCQUFBLENBR0osV0FDSSxtQkFBQSxDQUNBLDREQUFBLENBQ0EsZUFBQSxDQUNBLGlCQUFBLENBQ0EsaUJBQUEsQ0FHSixXQUNJLG1CQUFBLENBQ0EsNERBQUEsQ0FDQSxlQUFBLENBQ0EsaUJBQUEsQ0FDQSxpQkFBQSxDQzVGSiw4QkFDRSxjQUFBLENBQ0EsT0FBQSxDQUNBLFNBQUEsQ0FDQSxtQkFBQSxDQUNBLFdBQUEsQ0FDQSxXQUFBLENBQ0EsbUVBQUEsQ0FDQSxzQkFBQSxDQUNBLFdBQUEsQ0FDQSxpQkFBQSxDQUNBLGVBQUEsQ0FDQSxrQkFBQSxDQUNBLGlFQUFBLENBR0Esa0NBQ0UsVUFBQSxDQUNBLFFBQUEsQ0FDQSxjQUFBLENBQ0EsZ0JBQUEsQ0FJSix5QkFDRSxVQUFBLENBQ0EsV0FBQSxDQUNBLFdBQUEsQ0FDQSxrQkFBQSxDQUNBLGFBQUEsQ0FDQSxzQkFBQSxDQUNBLFNBQUEsQ0FDQSxlQUFBLENBQ0EsaUJBQUEsQ0FDQSxlQUFBLENBQ0Esb0JBQUEsQ0FDQSx3QkFBQSIsInNvdXJjZXNDb250ZW50IjpbIiRtYWluLWZvbnQ6ICdJbnRlcic7XG4kbWFpbi1mb250LWJvbGQ6ICdJbnRlcic7XG5cbjpyb290IHtcbiAgICAtLWJhY2tncm91bmRPcGFjaXR5TXVya3k6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC45NSk7XG4gICAgLS1vbkJhY2tncm91bmRMaWdodDogcmdiYSgzNiwgMzYsIDM2LCAwLjEwKTtcbiAgICAtLWJhY2tncm91bmQ6ICNGRkY7XG4gICAgLS1vbkJhY2tncm91bmQ6ICMyNDI0MjQ7XG4gICAgLS1hY2NlbnQ6ICMwRjcxRjA7XG4gICAgLS1kZWZhdWx0LWJsYWNrOiByZ2JhKDAsIDAsIDAsIDAuMDApO1xuICAgIC0tYmFja2dyb3VuZFNoYWRvdzogcmdiYSgwLCAwLCAwLCAwLjE0KTtcbiAgICAtLW9uQWNjZW50OiAjRkZGO1xuICAgIC0tb25BY2NlbnREaXNhYmxlZDogI0IyRDRGQztcbiAgICAtLW9uQmFja2dyb3VuZERpc2FibGVkOiAjOTE5MTkxO1xuICAgIC0tb25CYWNrZ3JvdW5kU2Vjb25kYXJ5OiAjNUI1QjVCO1xuICAgIC0tb25CYWNrZ3JvdW5kRXh0cmFMaWdodDogI0Y0RjRGNDtcbiAgICAtLWFjY2VudEhpZ2hDb250cmFzdDogIzBFNjhERDtcbiAgICAtLWJhY2tncm91bmRCdXR0b25EaXNhYmxlZDogcmdiYSg2OCwgNjgsIDY4LCAwLjEwKTtcbiAgICAtLW9uQmFja2dyb3VuZEV4dHJhTGlnaHQ6ICNGNEY0RjQ7XG4gICAgLS1zY3JvbGxUcmFjazogI0U4RThFODtcbiAgICAtLXNjcm9sbFRodW1iOiAjQTFBMUExO1xuICAgIC0tYnV0dG9uSG92ZXI6ICNFMEUwRTA7XG4gICAgLS1jcml0aWNhbDogI0Q0MDQwNDtcbiAgICAtLWltZy1sb2dvOiB1cmwoJ35AYnJhbmQvYXNzZXRzL2ltYWdlcy9sb2dvLnN2ZycpO1xuICAgIC0taW1nLWNvbXBsZXRlZDogdXJsKCd+QGJyYW5kL2Fzc2V0cy9pbWFnZXMvc3RhdHVzX29rLnN2ZycpO1xuICAgIC0taW1nLWFsZXJ0OiB1cmwoJ35AYnJhbmQvYXNzZXRzL2ltYWdlcy9hbGVydC5zdmcnKTtcbiAgICAtLWltZy1pbmZvOiB1cmwoJ35AYnJhbmQvYXNzZXRzL2ltYWdlcy9pbmZvLnN2ZycpO1xuICAgIC0taW1nLXRvb2x0aXA6IHVybCgnfkBicmFuZC9hc3NldHMvaW1hZ2VzL2xpZ2h0L3Rvb2x0aXAuc3ZnJyk7XG4gICAgLS1uby12aWRlby1pbWc6IHVybCgnfkBicmFuZC9hc3NldHMvaW1hZ2VzL2xpZ2h0L25vLXZpZGVvLWlsbHVzdHJhdGlvbi5zdmcnKTtcbn1cblxuaHRtbFtkYXRhLWdlbi10aGVtZT1cImRhcmtcIl0ge1xuICAgIC0tYmFja2dyb3VuZE9wYWNpdHlNdXJreTogcmdiYSgwLCAwLCAwLCAwLjcwKTtcbiAgICAtLW9uQmFja2dyb3VuZExpZ2h0OiByZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMTUpO1xuICAgIC0tYmFja2dyb3VuZDogIzI3MjcyNztcbiAgICAtLW9uQmFja2dyb3VuZDogI0ZGRjtcbiAgICAtLWFjY2VudDogIzNGOERGMztcbiAgICAtLWRlZmF1bHQtYmxhY2s6IHJnYmEoMCwgMCwgMCwgMC4wMCk7XG4gICAgLS1iYWNrZ3JvdW5kU2hhZG93OiByZ2JhKDAsIDAsIDAsIDAuMTQpO1xuICAgIC0tb25BY2NlbnQ6ICNGRkY7XG4gICAgLS1vbkFjY2VudERpc2FibGVkOiAjOTlDNkZCO1xuICAgIC0tb25CYWNrZ3JvdW5kRGlzYWJsZWQ6ICM4RjhGOEY7XG4gICAgLS1vbkJhY2tncm91bmRTZWNvbmRhcnk6ICNDN0M3Qzc7XG4gICAgLS1vbkJhY2tncm91bmRFeHRyYUxpZ2h0OiAjMzIzMjMyO1xuICAgIC0tYWNjZW50SGlnaENvbnRyYXN0OiAjM0Y4REYzO1xuICAgIC0tYmFja2dyb3VuZEJ1dHRvbkRpc2FibGVkOiByZ2JhKDY4LCA2OCwgNjgsIDAuMTApO1xuICAgIC0tYnV0dG9uSG92ZXI6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4xKTtcbiAgICAtLWNyaXRpY2FsOiAjRkY0MjQyO1xuICAgIC0tb25CYWNrZ3JvdW5kRXh0cmFMaWdodDogIzMyMzIzMjtcbiAgICAtLXNjcm9sbFRyYWNrOiAjMzIzMjMyO1xuICAgIC0tc2Nyb2xsVGh1bWI6ICM1MDUwNTA7XG4gICAgLS1pbWctY29tcGxldGVkOiB1cmwoJ35AYnJhbmQvYXNzZXRzL2ltYWdlcy9kYXJrL3N0YXR1c19vay5zdmcnKTtcbiAgICAtLWltZy1hbGVydDogdXJsKCd+QGJyYW5kL2Fzc2V0cy9pbWFnZXMvZGFyay9hbGVydC5zdmcnKTtcbiAgICAtLWltZy1pbmZvOiB1cmwoJ35AYnJhbmQvYXNzZXRzL2ltYWdlcy9pbmZvLnN2ZycpO1xuICAgIC0taW1nLXRvb2x0aXA6IHVybCgnfkBicmFuZC9hc3NldHMvaW1hZ2VzL2RhcmsvdG9vbHRpcC5zdmcnKTtcbiAgICAtLW5vLXZpZGVvLWltZzogdXJsKCd+QGJyYW5kL2Fzc2V0cy9pbWFnZXMvZGFyay9uby12aWRlby1pbGx1c3RyYXRpb24uc3ZnJyk7XG59XG5cbkBmb250LWZhY2Uge1xuICAgIGZvbnQtZmFtaWx5OiAnSW50ZXInO1xuICAgIHNyYzogdXJsKCdAYnJhbmQvYXNzZXRzL2ZvbnRzL0ludGVyLVJlZ3VsYXIud29mZjInKSBmb3JtYXQoJ3dvZmYyJyk7XG4gICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC1kaXNwbGF5OiBzd2FwO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgICBmb250LWZhbWlseTogJ0ludGVyJztcbiAgICBzcmM6IHVybCgnQGJyYW5kL2Fzc2V0cy9mb250cy9JbnRlci1NZWRpdW0ud29mZjInKSBmb3JtYXQoJ3dvZmYyJyk7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC1kaXNwbGF5OiBzd2FwO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgICBmb250LWZhbWlseTogJ0ludGVyJztcbiAgICBzcmM6IHVybCgnQGJyYW5kL2Fzc2V0cy9mb250cy9JbnRlci1TZW1pQm9sZC53b2ZmMicpIGZvcm1hdCgnd29mZjInKTtcbiAgICBmb250LXdlaWdodDogNjAwO1xuICAgIGZvbnQtc3R5bGU6IG5vcm1hbDtcbiAgICBmb250LWRpc3BsYXk6IHN3YXA7XG59XG5cbkBmb250LWZhY2Uge1xuICAgIGZvbnQtZmFtaWx5OiAnSW50ZXInO1xuICAgIHNyYzogdXJsKCdAYnJhbmQvYXNzZXRzL2ZvbnRzL0ludGVyLUJvbGQud29mZjInKSBmb3JtYXQoJ3dvZmYyJyk7XG4gICAgZm9udC13ZWlnaHQ6IDcwMDtcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC1kaXNwbGF5OiBzd2FwO1xufVxuXG5AZm9udC1mYWNlIHtcbiAgICBmb250LWZhbWlseTogJ0ludGVyJztcbiAgICBzcmM6IHVybCgnQGJyYW5kL2Fzc2V0cy9mb250cy9JbnRlci1FeHRyYUJvbGQud29mZjInKSBmb3JtYXQoJ3dvZmYyJyk7XG4gICAgZm9udC13ZWlnaHQ6IDgwMDtcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC1kaXNwbGF5OiBzd2FwO1xufVxuIiwiXG4gICAgICAgICAgICAgICAgICBAaW1wb3J0IFwiQGJyYW5kL3N0eWxlcy90aGVtZS5zY3NzXCI7XG4gICAgICAgICAgICAgICAgXG4udmlkZW8tZG93bmxvYWRlci1pZnJhbWUtd3JhcCB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgdG9wOiAzcHg7XG4gIHJpZ2h0OiAzcHg7XG4gIHotaW5kZXg6IDkyMTQ3NDgzNjQ1O1xuICB3aWR0aDogMzEycHg7XG4gIGhlaWdodDogYXV0bztcbiAgYmFja2dyb3VuZDogdmFyKC0tYmFja2dyb3VuZE9wYWNpdHlNdXJreSwgcmdiYSgyNTUsIDI1NSwgMjU1LCAwLjk1KSk7XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgMC4ycztcbiAgYm9yZGVyOiBub25lO1xuICBtYXJnaW4tcmlnaHQ6IDEwcHg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGJvcmRlci1yYWRpdXM6IDE2cHg7XG4gIGJveC1zaGFkb3c6IDAgMTJweCA0MHB4IHJnYmEoMCwgMCwgMCwgMC4yNSksIDAgNHB4IDEycHggcmdiYSgwLCAwLCAwLCAwLjE1KTtcblxuICAvKiBSVEwgcG9zaXRpb25pbmc6IGZsaXAgc2lkZSBvbmx5ICovXG4gICYucnRsIHtcbiAgICByaWdodDogYXV0bztcbiAgICBsZWZ0OiAzcHg7XG4gICAgbWFyZ2luLXJpZ2h0OiAwO1xuICAgIG1hcmdpbi1sZWZ0OiAxMHB4O1xuICB9XG59XG5cbi52aWRlby1kb3dubG9hZGVyLWlmcmFtZSB7XG4gIHdpZHRoOiAxMDAlO1xuICBoZWlnaHQ6IGF1dG87XG4gIGJvcmRlcjogbm9uZTtcbiAgYm9yZGVyLXJhZGl1czogMTZweDtcbiAgZGlzcGxheTogYmxvY2s7XG4gIHRyYW5zaXRpb246IG9wYWNpdHkgMC4ycztcbiAgb3BhY2l0eTogMTtcbiAgb3ZlcmZsb3cteTogYXV0bztcbiAgb3ZlcmZsb3cteDogaGlkZGVuO1xuICBib3gtc2hhZG93OiBub25lO1xuICBiYWNrZHJvcC1maWx0ZXI6IG5vbmU7XG4gIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50OyAvKiBFbnN1cmUgaWZyYW1lIGRvZXNuJ3QgaW50ZXJmZXJlIHdpdGggcG9wdXAgYmFja2dyb3VuZCAqL1xufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+<body data-smart-converter-loaded="true">
+   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#fs-navbar-collapse-1">
+               <span class="sr-only">Menú</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://pacioli.greconsult.com/e/B81813636/index.php">
+               <i class="fa fa-home" aria-hidden="true"></i>&nbsp;
+               <span class="hidden-sm">RCM</span>
+            </a>
+         </div>
+         
+         <div class="collapse navbar-collapse" id="fs-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+               
+               <li class="dropdown">
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                     
+                     <i class="fa fa-wrench hidden-xs" aria-hidden="true" title="Administración"></i>
+                     <span class="text-capitalize visible-xs">admin</span>
+                     
+                  </a>
+                  <ul class="dropdown-menu">
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=admin_empresa">Empresa</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ie_csv_home">Importar/exportar CSV</a></li>
+                     
+                  </ul>
+               </li>
+               
+               <li class="dropdown">
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                     
+                     <span class="text-capitalize">compras</span>
+                     
+                  </a>
+                  <ul class="dropdown-menu">
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=compras_facturas">Facturas</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=compras_proveedores">Proveedores / Acreedores</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=compras_recibos">Recibos</a></li>
+                     
+                  </ul>
+               </li>
+               
+               <li class="dropdown">
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                     
+                     <span class="text-capitalize">contabilidad</span>
+                     
+                  </a>
+                  <ul class="dropdown-menu">
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=contabilidad_formas_pago">Formas de Pago</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=remesas">Remesas</a></li>
+                     
+                  </ul>
+               </li>
+               
+               <li class="dropdown">
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                     
+                     <span class="text-capitalize">informes</span>
+                     
+                  </a>
+                  <ul class="dropdown-menu">
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=informe_albaranes">Albaranes</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=informe_articulos">Artículos</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=dashboard">Dashboard</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=informe_facturas">Facturas</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=informe_recibos">Recibos</a></li>
+                     
+                  </ul>
+               </li>
+               
+               <li class="dropdown active">
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                     
+                     <span class="text-capitalize">ventas</span>
+                     
+                  </a>
+                  <ul class="dropdown-menu">
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_albaranes">Albaranes</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_articulos">Artículos / Conceptos</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_clientes">Clientes</a></li>
+                     
+                     <li class="active"><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas">Facturas</a></li>
+                     
+                     <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_recibos">Recibos</a></li>
+                     
+                  </ul>
+               </li>
+               
+               
+               <li class="dropdown hidden-sm">
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" title="Acceso rápido">
+                     <i class="fa fa-star hidden-xs" aria-hidden="true"></i>
+                     <span class="visible-xs">Acceso rápido</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                     
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                        <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=nueva_compra">Nueva compra...</a></li>
+                        
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                        <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=dashboard">Dashboard</a></li>
+                        
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                        <li><a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=nueva_venta">Nueva venta...</a></li>
+                        
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                        
+                     
+                     
+                  </ul>
+               </li>
+               
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+               
+               
+               
+               <li class="dropdown">
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" class="dropdown-toggle" data-toggle="dropdown">
+                     <i class="fa fa-clock-o hidden-xs" aria-hidden="true"></i>
+                     <span class="visible-xs">Historial</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                  
+                     
+                     <li title="creado el 15-05-2026 16:50:20">
+                        <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13767">
+                           <i class="fa fa-file" aria-hidden="true"></i>&nbsp; Factura Cliente FAC2026A677
+                        </a>
+                     </li>
+                     
+                  
+                  </ul>
+               </li>
+               
+               
+               <li class="dropdown">
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" class="dropdown-toggle" data-toggle="dropdown">
+                     <span class="hidden-xs">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <span class="hidden-sm">&nbsp;Ayuda</span>
+                     </span>
+                     <span class="visible-xs">Ayuda</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li>
+                        <a href="https://www.facturascripts.com/documentacion" target="_blank" style="display: none">
+                           <i class="fa fa-book" aria-hidden="true"></i>&nbsp; Documentación
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.facturascripts.com/contacto" target="_blank" style="display: none">
+                           <i class="fa fa-shield" aria-hidden="true"></i>&nbsp; Soporte oficial
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.facturascripts.com/errores" target="_blank" style="display: none">
+                           <i class="fa fa-bug" aria-hidden="true"></i>&nbsp; Errores
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.facturascripts.com/ideas" target="_blank" style="display: none">
+                           <i class="fa fa-lightbulb-o" aria-hidden="true"></i>&nbsp; Ideas
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" id="b_feedback2">
+                           <i class="fa fa-edit" aria-hidden="true"></i>&nbsp; Informar de error...
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.youtube.com/watch?v=HED6wlEtSY4" target="_blank">
+                           <i class="fa fa-book" aria-hidden="true"></i>&nbsp; Ayuda - Acceso a Pacioli
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.youtube.com/watch?v=nZp5KbkthQ4" target="_blank">
+                           <i class="fa fa-book" aria-hidden="true"></i>&nbsp; Ayuda - Configuración básica
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.youtube.com/watch?v=bf58D_3VxGw" target="_blank">
+                           <i class="fa fa-book" aria-hidden="true"></i>&nbsp; Ayuda - Proveedores y clientes
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.youtube.com/watch?v=xsKGTzz5CDg" target="_blank">
+                           <i class="fa fa-book" aria-hidden="true"></i>&nbsp; Ayuda - Artículos y conceptos
+                        </a>
+                     </li>
+                     <li>
+                        <a href="https://www.youtube.com/watch?v=RKCe1ZAjRz4" target="_blank">
+                           <i class="fa fa-book" aria-hidden="true"></i>&nbsp; Ayuda - Facturas
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+               
+               <li class="dropdown">
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas#" class="dropdown-toggle" data-toggle="dropdown" title="Tecnicos">
+                     <i class="fa fa-user-circle hidden-xs" aria-hidden="true"></i>
+                     <span class="visible-xs">Usuario</span>
+                  </a>
+                  <ul class="dropdown-menu">
+                     <li>
+                        <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=admin_user&amp;snick=Tecnicos">
+                           <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp; Tecnicos
+                        </a>
+                     </li>
+                     <li class="divider"></li>
+                     <li>
+                        <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;logout=TRUE">
+                           <i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp; Cerrar sesión
+                        </a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </nav>
+   
+   
+   <div style="margin-bottom: 55px"></div>
+   
+   
+   
+   
+   
+   
+   <script type="text/javascript">
+
+   function form_submit() {
+      $('form[name=f_feedback]').submit();
+   }
+
+   function validate_size(file) {
+
+      var FileSize = file.files[0].size / 1024 / 1024; // in MB
+      if (FileSize > 2) {
+        alert('El tamaño máximo son 2 MB');
+        $(file).val('');
+      }
+   }
+
+   $(document).ready(function () {
+
+      var request;
+
+      $('form[name=f_feedback]').submit(function(event){
+
+          event.preventDefault();
+          if (request) {
+              request.abort();
+          }
+
+          var serializedData = $(this).serialize();
+
+          request = $.post('/fs/index.php?page=feedback2', serializedData, function(response) {
+          });
+
+          request.done(function (response, textStatus, jqXHR){
+              alert("Email enviado.");
+          });
+
+          request.fail(function (jqXHR, textStatus, errorThrown){
+              alert("Email no enviado. Por favor, inténtelo de nuevo.");
+          });
+
+          $(this).trigger('reset');
+          $('#enviar').prop("disabled", false);
+          $("#modal_feedback2 .close").click();
+      });
+   });
+</script>
+
+
+<form class="form" role="form" name="f_feedback" action="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas" method="post" enctype="multipart/form-data">
+   <input type="hidden" name="feedback_info" value="facturascripts: 2017.030
+os: Linux SRVWEB 4.4.0-210-generic #242-Ubuntu SMP Fri Apr 16 09:57:56 UTC 2021 x86_64
+php: 7.0.33-0ubuntu0.16.04.16
+database type: MYSQL
+database version: MYSQL 50733
+memcache: NO
+curl: NO
+max input vars: 1000
+plugins: Backup,factura_detallada,export_to_director,tesoreria,presupuestos_y_pedidos,megacopiador,import_export_csv,editar_facturas,facturacion_base
+url: /e/B81813636/index.php?page=ventas_facturas
+------">
+   <input type="hidden" name="para" value="ruromgar@gmail.com">
+   <div class="modal" id="modal_feedback2">
+      <div class="modal-dialog">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+               <h4 class="modal-title">
+                  <span class="glyphicon glyphicon-envelope"></span>&nbsp;
+                  Notificar problema
+               </h4>
+            </div>
+            <div class="modal-body">
+               <div class="form-group">
+                  <div class="input-group">
+                     <span class="input-group-addon">De</span>
+                     <select name="de" class="form-control">
+                        
+                        <option>staff@rcmjit.com</option>
+                     </select>
+                  </div>
+               </div>
+               <div class="form-group">
+                  <textarea class="form-control" name="mensaje" rows="6" placeholder="Detalla tu duda o problema..."></textarea>
+                  <p class="help-block">
+                    Se enviará un mail a soporte desde la dirección seleccionada. Intenta detallar tu problema al máximo; te responderemos lo antes posible.
+                  </p>
+               </div>
+               <div class="btn-group">
+                  <button id="enviar" type="button" class="btn btn-sm btn-primary" aria-hidden="true" onclick="this.disabled=true;form_submit();">
+                     <span class="glyphicon glyphicon-send"></span>
+                     &nbsp; Enviar <span class="caret"></span>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</form>
+
+
+   
+   <div class="modal fade" id="modal_iframe" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+               </button>
+               <h4 class="modal-title">Modal title</h4>
+            </div>
+            <iframe src="./Facturas ‹ RCM_files/saved_resource.html" width="100%" height="600">
+               Este navegador no soporta frames.
+            </iframe>
+         </div>
+      </div>
+   </div>
+
+
+<script type="text/javascript">
+   function buscar_lineas()
+   {
+      if(document.f_buscar_lineas.buscar_lineas.value == '')
+      {
+         $('#search_results').html('');
+      }
+      else
+      {
+         $.ajax({
+            type: 'POST',
+            url: 'index.php?page=ventas_facturas',
+            dataType: 'html',
+            data: $('form[name=f_buscar_lineas]').serialize(),
+            success: function(datos) {
+               var re = /<!--(.*?)-->/g;
+               var m = re.exec( datos );
+               if( m[1] == document.f_buscar_lineas.buscar_lineas.value )
+               {
+                  $('#search_results').html(datos);
+               }
+            }
+         });
+      }
+   }
+   function clean_cliente()
+   {
+      document.f_custom_search.ac_cliente.value = '';
+      document.f_custom_search.codcliente.value = '';
+      document.f_custom_search.submit();
+   }
+   $(document).ready(function() {
+      
+      
+      
+      $('#b_huecos').click(function() {
+         $('#modal_huecos').modal('show');
+      });
+      $('#b_buscar_lineas').click(function(event) {
+         event.preventDefault();
+         $('#modal_buscar_lineas').modal('show');
+         document.f_buscar_lineas.buscar_lineas.focus();
+      });
+      $('#f_buscar_lineas').keyup(function() {
+         buscar_lineas();
+      });
+      $('#f_buscar_lineas').submit(function(event) {
+         event.preventDefault();
+         buscar_lineas();
+      });
+      $("#ac_cliente").autocomplete({
+         serviceUrl: 'index.php?page=ventas_facturas',
+         paramName: 'buscar_cliente',
+         onSelect: function (suggestion) {
+            if(suggestion)
+            {
+               if(document.f_custom_search.codcliente.value != suggestion.data && suggestion.data != '')
+               {
+                  document.f_custom_search.codcliente.value = suggestion.data;
+                  document.f_custom_search.submit();
+               }
+            }
+         }
+      });
+   });
+</script>
+
+<div class="container-fluid" style="margin-top: 10px; margin-bottom: 10px;">
+   <div class="row">
+      <div class="col-sm-8 col-xs-6">
+         <div class="btn-group hidden-xs">
+            <a class="btn btn-sm btn-default" href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas" title="Recargar la página">
+               <span class="glyphicon glyphicon-refresh"></span>
+            </a>
+            
+            <a class="btn btn-sm btn-default active" href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;default_page=FALSE" title="Marcada como página de inicio (pulsa de nuevo para desmarcar)">
+               <i class="fa fa-bookmark" aria-hidden="true"></i>
+            </a>
+            
+         </div>
+         <div class="btn-group">
+            <a class="btn btn-sm btn-success" href="https://pacioli.greconsult.com/e/B81813636/index.php?page=nueva_venta&amp;tipo=factura">
+               <span class="glyphicon glyphicon-plus"></span>
+               <span class="hidden-xs">&nbsp;Nueva</span>
+            </a>
+            
+            <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#modal_huecos">
+               <span class="glyphicon glyphicon-exclamation-sign"></span>&nbsp; Huecos
+            </button>
+            
+            
+               
+            
+               
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=pagar_facturas" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-check" aria-hidden="true"></span><span class="hidden-xs">&nbsp; Pagar...</span></a>
+               
+            
+               
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_recibos" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-piggy-bank" aria-hidden="true"></span><span class="hidden-xs hidden-sm">&nbsp; Recibos</span></a>
+               
+            
+         </div>
+      </div>
+      <div class="col-sm-4 col-xs-6 text-right">
+         <a id="b_buscar_lineas" class="btn btn-sm btn-info" title="Buscar en las líneas">
+            <span class="glyphicon glyphicon-search"></span>&nbsp; Líneas
+         </a>
+         <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true">
+               <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right">
+               
+               <li>
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;order=fecha_desc">
+                     <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> &nbsp; Fecha &nbsp;
+                     <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                  </a>
+               </li>
+               
+               <li>
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;order=fecha_asc">
+                     <span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span> &nbsp; Fecha &nbsp;
+                     
+                  </a>
+               </li>
+               
+               <li>
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;order=vencimiento_desc">
+                     <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> &nbsp; Vencimiento &nbsp;
+                     
+                  </a>
+               </li>
+               
+               <li>
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;order=vencimiento_asc">
+                     <span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span> &nbsp; Vencimiento &nbsp;
+                     
+                  </a>
+               </li>
+               
+               <li>
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;order=codigo_desc">
+                     <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> &nbsp; Código &nbsp;
+                     
+                  </a>
+               </li>
+               
+               <li>
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;order=codigo_asc">
+                     <span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span> &nbsp; Código &nbsp;
+                     
+                  </a>
+               </li>
+               
+               <li>
+                  <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;order=total_desc">
+                     <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> &nbsp; Total &nbsp;
+                     
+                  </a>
+               </li>
+               
+            </ul>
+         </div>
+      </div>
+   </div>
+</div>
+
+<ul class="nav nav-tabs" role="tablist">
+   <li class="active">
+      <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo">
+         <span class="text-capitalize hidden-xs">Facturas (todo)</span>
+         <span class="visible-xs">Todo</span>
+      </a>
+   </li>
+   <li>
+      <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=sinpagar">
+         <span class="glyphicon glyphicon-pushpin"></span>
+         <span class="hidden-xs">&nbsp;Sin pagar</span>
+         <span class="hidden-xs badge">11302</span>
+      </a>
+   </li>
+   <li>
+      <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=buscar" title="Buscar">
+         <span class="glyphicon glyphicon-search"></span>
+         
+      </a>
+   </li>
+   
+      
+   
+      
+   
+      
+   
+</ul>
+
+
+
+
+<div class="table-responsive">
+   <table class="table table-hover">
+      <thead>
+         <tr>
+            <th></th>
+            <th></th>
+            <th class="text-left">Código + número 2</th>
+            <th class="text-left">Cliente</th>
+            <th class="hidden-sm"></th>
+            <th class="text-left">Observaciones</th>
+            <th class="text-right">Total</th>
+            
+            <th class="text-right">Fecha</th>
+            <th class="text-right">Vencimiento</th>
+         </tr>
+      </thead>
+      
+      <tbody><tr class="clickableRow" href="index.php?page=ventas_factura&amp;id=13767" data-codigo="FAC2026A677">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13767">FAC2026A677</a> 
+            
+            
+            
+         </td>
+         <td>
+            Radisson Hotels Spain, S.L.U. (BIORC - Radisson Collection Bilbao)
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001862" class="cancel_clickable" title="Ver más facturas de Radisson Hotels Spain, S.L.U. (BIORC - Radisson Collection Bilbao)">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="84,70 €">
+            84,70 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:50:05">
+            <b>15-05-2026</b>
+         </td>
+         <td class="text-right">
+            <b>15-05-2026</b>
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13766" data-codigo="FAC2026A676">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13766">FAC2026A676</a> 
+            
+            
+            
+         </td>
+         <td>
+            AXIOMA TAUTO SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001595" class="cancel_clickable" title="Ver más facturas de AXIOMA TAUTO SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="152,46 €">
+            152,46 €
+         </td>
+         
+         <td class="text-right" title="Hora 09:57:08">
+            14-05-2026
+         </td>
+         <td class="text-right">
+            14-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow success" href="index.php?page=ventas_factura&amp;id=13765" data-codigo="FAC2026A675">
+         <td class="text-center">
+            
+            <span class="glyphicon glyphicon-ok" title="La factura está pagada"></span>
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13765">FAC2026A675</a> 
+            <span class="label label-warning">Sin IVA</span>
+            
+            
+         </td>
+         <td>
+            GRENKE RENT SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001403" class="cancel_clickable" title="Ver más facturas de GRENKE RENT SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="12 717,16 €">
+            12 717,16 €
+         </td>
+         
+         <td class="text-right" title="Hora 09:49:53">
+            14-05-2026
+         </td>
+         <td class="text-right">
+            14-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13764" data-codigo="FAC2026A674">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13764">FAC2026A674</a> 
+            
+            
+            
+         </td>
+         <td>
+            HUGWORLD
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001396" class="cancel_clickable" title="Ver más facturas de HUGWORLD">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="326,70 €">
+            326,70 €
+         </td>
+         
+         <td class="text-right" title="Hora 18:42:34">
+            13-05-2026
+         </td>
+         <td class="text-right">
+            13-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13763" data-codigo="FAC2026A673">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13763">FAC2026A673</a> 
+            <span class="label label-warning">Sin IVA</span>
+            
+            
+         </td>
+         <td>
+            Buono Ventures Holding Srl
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001555" class="cancel_clickable" title="Ver más facturas de Buono Ventures Holding Srl">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="90,00 €">
+            90,00 €
+         </td>
+         
+         <td class="text-right" title="Hora 12:55:11">
+            13-05-2026
+         </td>
+         <td class="text-right">
+            13-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13762" data-codigo="FAC2026A672">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13762">FAC2026A672</a> 
+            <span class="label label-warning">Sin IVA</span>
+            
+            
+         </td>
+         <td>
+            BIC CAPITAL SRL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001766" class="cancel_clickable" title="Ver más facturas de BIC CAPITAL SRL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="88,80 €">
+            88,80 €
+         </td>
+         
+         <td class="text-right" title="Hora 18:27:53">
+            12-05-2026
+         </td>
+         <td class="text-right">
+            12-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13761" data-codigo="FAC2026A671">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13761">FAC2026A671</a> 
+            
+            
+            
+         </td>
+         <td>
+            Victoria Pipino
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001676" class="cancel_clickable" title="Ver más facturas de Victoria Pipino">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="242,00 €">
+            242,00 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:31:48">
+            12-05-2026
+         </td>
+         <td class="text-right">
+            12-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13760" data-codigo="FAC2026A670">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13760">FAC2026A670</a> 
+            
+            
+            
+         </td>
+         <td>
+            EUXENITA DIECISEIS SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001935" class="cancel_clickable" title="Ver más facturas de EUXENITA DIECISEIS SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="30,00 €">
+            30,00 €
+         </td>
+         
+         <td class="text-right" title="Hora 09:51:29">
+            12-05-2026
+         </td>
+         <td class="text-right">
+            12-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow success" href="index.php?page=ventas_factura&amp;id=13759" data-codigo="FAC2026A669">
+         <td class="text-center">
+            
+            <span class="glyphicon glyphicon-ok" title="La factura está pagada"></span>
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13759">FAC2026A669</a> 
+            
+            
+            
+         </td>
+         <td>
+            Fernando Bucero Cediel
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=002246" class="cancel_clickable" title="Ver más facturas de Fernando Bucero Cediel">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="30,00 €">
+            30,00 €
+         </td>
+         
+         <td class="text-right" title="Hora 09:43:32">
+            12-05-2026
+         </td>
+         <td class="text-right">
+            12-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13758" data-codigo="FAC2026A668">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13758">FAC2026A668</a> 
+            
+            
+            
+         </td>
+         <td>
+            VALUE TREE AV SA.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001379" class="cancel_clickable" title="Ver más facturas de VALUE TREE AV SA.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="1 024,99 €">
+            1 024,99 €
+         </td>
+         
+         <td class="text-right" title="Hora 09:23:20">
+            12-05-2026
+         </td>
+         <td class="text-right">
+            12-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13757" data-codigo="FAC2026A667">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13757">FAC2026A667</a> 
+            
+            
+            
+         </td>
+         <td>
+            JOSE MARIA PEÑA SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001358" class="cancel_clickable" title="Ver más facturas de JOSE MARIA PEÑA SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="53,72 €">
+            53,72 €
+         </td>
+         
+         <td class="text-right" title="Hora 19:06:11">
+            11-05-2026
+         </td>
+         <td class="text-right">
+            11-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13756" data-codigo="FAC2026A666">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13756">FAC2026A666</a> 
+            
+            
+            
+         </td>
+         <td>
+            MED RISK CONSULTING CORREDURÍA DE SEGUROS S.L.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=002212" class="cancel_clickable" title="Ver más facturas de MED RISK CONSULTING CORREDURÍA DE SEGUROS S.L.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="24,20 €">
+            24,20 €
+         </td>
+         
+         <td class="text-right" title="Hora 17:11:12">
+            11-05-2026
+         </td>
+         <td class="text-right">
+            11-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13755" data-codigo="FAC2026A665">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13755">FAC2026A665</a> 
+            
+            
+            
+         </td>
+         <td>
+            MED RISK CONSULTING CORREDURÍA DE SEGUROS S.L.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=002212" class="cancel_clickable" title="Ver más facturas de MED RISK CONSULTING CORREDURÍA DE SEGUROS S.L.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="24,20 €">
+            24,20 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:20:29">
+            11-05-2026
+         </td>
+         <td class="text-right">
+            11-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13754" data-codigo="FAC2026R9">
+         <td class="text-center">
+            
+            
+            
+            <span class="glyphicon glyphicon-flag" title="factura rectificativa de FAC2026A656"></span>
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13754">FAC2026R9</a> 
+            
+            
+            
+         </td>
+         <td>
+            VALUE TREE AV SA.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001379" class="cancel_clickable" title="Ver más facturas de VALUE TREE AV SA.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="-42,05 €">
+            -42,05 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:18:46">
+            11-05-2026
+         </td>
+         <td class="text-right">
+            11-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13753" data-codigo="FAC2026A664">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13753">FAC2026A664</a> 
+            
+            
+            
+         </td>
+         <td>
+            Sofclar, S.L.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=002236" class="cancel_clickable" title="Ver más facturas de Sofclar, S.L.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="15,73 €">
+            15,73 €
+         </td>
+         
+         <td class="text-right" title="Hora 13:20:51">
+            11-05-2026
+         </td>
+         <td class="text-right">
+            11-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13752" data-codigo="FAC2026A663">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13752">FAC2026A663</a> 
+            <span class="label label-warning">Sin IVA</span>
+            
+            
+         </td>
+         <td>
+            GRUPSA CHILE SISTEMAS DE PUERTAS LDA
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001537" class="cancel_clickable" title="Ver más facturas de GRUPSA CHILE SISTEMAS DE PUERTAS LDA">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="633,33 €">
+            633,33 €
+         </td>
+         
+         <td class="text-right" title="Hora 10:31:43">
+            11-05-2026
+         </td>
+         <td class="text-right">
+            11-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13751" data-codigo="FAC2026A662">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13751">FAC2026A662</a> 
+            <span class="label label-warning">Sin IVA</span>
+            
+            
+         </td>
+         <td>
+            Buono Ventures Holding Srl
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001555" class="cancel_clickable" title="Ver más facturas de Buono Ventures Holding Srl">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="44,40 €">
+            44,40 €
+         </td>
+         
+         <td class="text-right" title="Hora 19:21:02">
+            08-05-2026
+         </td>
+         <td class="text-right">
+            08-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13750" data-codigo="FAC2026A661">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13750">FAC2026A661</a> 
+            <span class="label label-warning">Sin IVA</span>
+            
+            
+         </td>
+         <td>
+            IBER &amp; GROUP DE CONSTRUCCIONES DEPORTIVAS, S.L.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001497" class="cancel_clickable" title="Ver más facturas de IBER &amp; GROUP DE CONSTRUCCIONES DEPORTIVAS, S.L.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="462,00 €">
+            462,00 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:43:15">
+            08-05-2026
+         </td>
+         <td class="text-right">
+            08-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13749" data-codigo="FAC2026A660">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13749">FAC2026A660</a> 
+            
+            
+            
+         </td>
+         <td>
+            CIRCULO DE EMPRESARIOS
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001449" class="cancel_clickable" title="Ver más facturas de CIRCULO DE EMPRESARIOS">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="48,40 €">
+            48,40 €
+         </td>
+         
+         <td class="text-right" title="Hora 13:03:54">
+            08-05-2026
+         </td>
+         <td class="text-right">
+            08-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13748" data-codigo="FAC2026A659">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13748">FAC2026A659</a> 
+            
+            
+            
+         </td>
+         <td>
+            Radisson Hotels Spain, S.L.U. (BCNZA - Radisson Blu Sagrada Familia)
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001820" class="cancel_clickable" title="Ver más facturas de Radisson Hotels Spain, S.L.U. (BCNZA - Radisson Blu Sagrada Familia)">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="132,07 €">
+            132,07 €
+         </td>
+         
+         <td class="text-right" title="Hora 11:19:17">
+            08-05-2026
+         </td>
+         <td class="text-right">
+            08-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13747" data-codigo="FAC2026A658">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13747">FAC2026A658</a> 
+            
+            
+            
+         </td>
+         <td>
+            Zala Capital S.L
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001549" class="cancel_clickable" title="Ver más facturas de Zala Capital S.L">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="193,60 €">
+            193,60 €
+         </td>
+         
+         <td class="text-right" title="Hora 10:46:32">
+            08-05-2026
+         </td>
+         <td class="text-right">
+            08-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13746" data-codigo="FAC2026A657">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13746">FAC2026A657</a> 
+            
+            
+            
+         </td>
+         <td>
+            LAOBAI ADVISORS SL.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001929" class="cancel_clickable" title="Ver más facturas de LAOBAI ADVISORS SL.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="21,78 €">
+            21,78 €
+         </td>
+         
+         <td class="text-right" title="Hora 13:40:29">
+            07-05-2026
+         </td>
+         <td class="text-right">
+            07-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13745" data-codigo="FAC2026A656">
+         <td class="text-center">
+            
+            
+            <span class="glyphicon glyphicon-remove" title="La factura está anulada"></span>
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13745">FAC2026A656</a> 
+            
+            
+            
+         </td>
+         <td>
+            VALUE TREE AV SA.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001379" class="cancel_clickable" title="Ver más facturas de VALUE TREE AV SA.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="42,05 €">
+            42,05 €
+         </td>
+         
+         <td class="text-right" title="Hora 12:26:02">
+            07-05-2026
+         </td>
+         <td class="text-right">
+            07-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13744" data-codigo="FAC2026A655">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13744">FAC2026A655</a> 
+            
+            
+            
+         </td>
+         <td>
+            PERMIRA ASESORES SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001140" class="cancel_clickable" title="Ver más facturas de PERMIRA ASESORES SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="877,25 €">
+            877,25 €
+         </td>
+         
+         <td class="text-right" title="Hora 12:13:42">
+            07-05-2026
+         </td>
+         <td class="text-right">
+            07-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13743" data-codigo="FAC2026A654">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13743">FAC2026A654</a> 
+            
+            
+            
+         </td>
+         <td>
+            Adquisición Técnica
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=002036" class="cancel_clickable" title="Ver más facturas de Adquisición Técnica">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>PEDIDO "20260427A"</td>
+         <td class="text-right" title="998,69 €">
+            998,69 €
+         </td>
+         
+         <td class="text-right" title="Hora 11:35:44">
+            07-05-2026
+         </td>
+         <td class="text-right">
+            07-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13742" data-codigo="FAC2026A653">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13742">FAC2026A653</a> 
+            
+            
+            
+         </td>
+         <td>
+            PAVIMIENTOS IMPRESOS HORMIGON, S.L.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=000152" class="cancel_clickable" title="Ver más facturas de PAVIMIENTOS IMPRESOS HORMIGON, S.L.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="764,48 €">
+            764,48 €
+         </td>
+         
+         <td class="text-right" title="Hora 13:21:59">
+            06-05-2026
+         </td>
+         <td class="text-right">
+            06-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13741" data-codigo="FAC2026A652">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13741">FAC2026A652</a> 
+            
+            
+            
+         </td>
+         <td>
+            HUGWORLD
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001396" class="cancel_clickable" title="Ver más facturas de HUGWORLD">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="81,31 €">
+            81,31 €
+         </td>
+         
+         <td class="text-right" title="Hora 12:04:50">
+            06-05-2026
+         </td>
+         <td class="text-right">
+            06-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow success" href="index.php?page=ventas_factura&amp;id=13740" data-codigo="FAC2026A651">
+         <td class="text-center">
+            
+            <span class="glyphicon glyphicon-ok" title="La factura está pagada"></span>
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13740">FAC2026A651</a> 
+            
+            
+            
+         </td>
+         <td>
+            TAISA
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001365" class="cancel_clickable" title="Ver más facturas de TAISA">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="3 643,18 €">
+            3 643,18 €
+         </td>
+         
+         <td class="text-right" title="Hora 11:33:26">
+            06-05-2026
+         </td>
+         <td class="text-right">
+            06-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13739" data-codigo="FAC2026A650">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13739">FAC2026A650</a> 
+            
+            
+            
+         </td>
+         <td>
+            FONDOMOVIL SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001804" class="cancel_clickable" title="Ver más facturas de FONDOMOVIL SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="84,70 €">
+            84,70 €
+         </td>
+         
+         <td class="text-right" title="Hora 09:44:59">
+            06-05-2026
+         </td>
+         <td class="text-right">
+            06-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13738" data-codigo="FAC2026A649">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13738">FAC2026A649</a> 
+            
+            
+            
+         </td>
+         <td>
+            CLUB FINANCIERO GENOVA
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001518" class="cancel_clickable" title="Ver más facturas de CLUB FINANCIERO GENOVA">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="655,82 €">
+            655,82 €
+         </td>
+         
+         <td class="text-right" title="Hora 19:54:35">
+            05-05-2026
+         </td>
+         <td class="text-right">
+            05-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13737" data-codigo="FAC2026R8">
+         <td class="text-center">
+            
+            
+            
+            <span class="glyphicon glyphicon-flag" title="factura rectificativa de FAC2026A635"></span>
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13737">FAC2026R8</a> 
+            
+            
+            
+         </td>
+         <td>
+            WINX CAPITAL 2000, S.L
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=002170" class="cancel_clickable" title="Ver más facturas de WINX CAPITAL 2000, S.L">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="-3 281,14 €">
+            -3 281,14 €
+         </td>
+         
+         <td class="text-right" title="Hora 19:01:18">
+            05-05-2026
+         </td>
+         <td class="text-right">
+            05-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13736" data-codigo="FAC2026A648">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13736">FAC2026A648</a> 
+            
+            
+            
+         </td>
+         <td>
+            WATER LIGHT TECHNOLOGY SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001534" class="cancel_clickable" title="Ver más facturas de WATER LIGHT TECHNOLOGY SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="285,00 €">
+            285,00 €
+         </td>
+         
+         <td class="text-right" title="Hora 18:33:34">
+            05-05-2026
+         </td>
+         <td class="text-right">
+            05-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13735" data-codigo="FAC2026A647">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13735">FAC2026A647</a> 
+            
+            
+            
+         </td>
+         <td>
+            SMYLIFE SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001557" class="cancel_clickable" title="Ver más facturas de SMYLIFE SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="44,24 €">
+            44,24 €
+         </td>
+         
+         <td class="text-right" title="Hora 18:23:24">
+            05-05-2026
+         </td>
+         <td class="text-right">
+            05-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13734" data-codigo="FAC2026A646">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13734">FAC2026A646</a> 
+            
+            
+            
+         </td>
+         <td>
+            Radisson Hotels Spain, S.L.U. (SVQRC - Radisson Collection Sevilla)
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001863" class="cancel_clickable" title="Ver más facturas de Radisson Hotels Spain, S.L.U. (SVQRC - Radisson Collection Sevilla)">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>PURCHASE ORDER 4500005226</td>
+         <td class="text-right" title="1 524,60 €">
+            1 524,60 €
+         </td>
+         
+         <td class="text-right" title="Hora 17:31:31">
+            05-05-2026
+         </td>
+         <td class="text-right">
+            05-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13733" data-codigo="FAC2026A645">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13733">FAC2026A645</a> 
+            
+            
+            
+         </td>
+         <td>
+            NEW VAVIN, INC.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001858" class="cancel_clickable" title="Ver más facturas de NEW VAVIN, INC.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="304,80 €">
+            304,80 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:58:04">
+            05-05-2026
+         </td>
+         <td class="text-right">
+            05-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13732" data-codigo="FAC2026A644">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13732">FAC2026A644</a> 
+            
+            
+            
+         </td>
+         <td>
+            Radisson Hotels Spain, S.L.U. (MADRR - Radisson Red Madrid)
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001864" class="cancel_clickable" title="Ver más facturas de Radisson Hotels Spain, S.L.U. (MADRR - Radisson Red Madrid)">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>PURCHASE ORDER 4500005231</td>
+         <td class="text-right" title="5 868,50 €">
+            5 868,50 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:40:00">
+            05-05-2026
+         </td>
+         <td class="text-right">
+            05-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13731" data-codigo="FAC2026A643">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13731">FAC2026A643</a> 
+            
+            
+            
+         </td>
+         <td>
+            TECMIN SA
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001357" class="cancel_clickable" title="Ver más facturas de TECMIN SA">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="500,94 €">
+            500,94 €
+         </td>
+         
+         <td class="text-right" title="Hora 10:45:13">
+            05-05-2026
+         </td>
+         <td class="text-right">
+            05-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow success" href="index.php?page=ventas_factura&amp;id=13730" data-codigo="FAC2026A642">
+         <td class="text-center">
+            
+            <span class="glyphicon glyphicon-ok" title="La factura está pagada"></span>
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13730">FAC2026A642</a> 
+            
+            
+            
+         </td>
+         <td>
+            IMAGEN CONCEPT AVANXEL S.L.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001246" class="cancel_clickable" title="Ver más facturas de IMAGEN CONCEPT AVANXEL S.L.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="242,00 €">
+            242,00 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:19:02">
+            04-05-2026
+         </td>
+         <td class="text-right">
+            04-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13729" data-codigo="FAC2026A641">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13729">FAC2026A641</a> 
+            
+            
+            
+         </td>
+         <td>
+            FUNDACION FAES
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001217" class="cancel_clickable" title="Ver más facturas de FUNDACION FAES">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="349,01 €">
+            349,01 €
+         </td>
+         
+         <td class="text-right" title="Hora 11:10:17">
+            04-05-2026
+         </td>
+         <td class="text-right">
+            04-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13728" data-codigo="FAC2026A640">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13728">FAC2026A640</a> 
+            
+            
+            
+         </td>
+         <td>
+            FOCH SERVICES LIMITED
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001503" class="cancel_clickable" title="Ver más facturas de FOCH SERVICES LIMITED">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="2 737,60 €">
+            2 737,60 €
+         </td>
+         
+         <td class="text-right" title="Hora 09:45:30">
+            04-05-2026
+         </td>
+         <td class="text-right">
+            04-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13727" data-codigo="FAC2026A639">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13727">FAC2026A639</a> 
+            
+            
+            
+         </td>
+         <td>
+            Victoria Pipino
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001676" class="cancel_clickable" title="Ver más facturas de Victoria Pipino">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="359,88 €">
+            359,88 €
+         </td>
+         
+         <td class="text-right" title="Hora 09:36:40">
+            04-05-2026
+         </td>
+         <td class="text-right">
+            04-05-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13726" data-codigo="FAC2026A638">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13726">FAC2026A638</a> 
+            
+            
+            
+         </td>
+         <td>
+            Victoria Pipino
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001676" class="cancel_clickable" title="Ver más facturas de Victoria Pipino">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="274,67 €">
+            274,67 €
+         </td>
+         
+         <td class="text-right" title="Hora 19:44:07">
+            30-04-2026
+         </td>
+         <td class="text-right">
+            30-04-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13725" data-codigo="FAC2026A637">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13725">FAC2026A637</a> 
+            
+            
+            
+         </td>
+         <td>
+            FRANCO ESPAÑOLA MARITIMA
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001514" class="cancel_clickable" title="Ver más facturas de FRANCO ESPAÑOLA MARITIMA">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="2 776,22 €">
+            2 776,22 €
+         </td>
+         
+         <td class="text-right" title="Hora 17:10:42">
+            30-04-2026
+         </td>
+         <td class="text-right">
+            30-04-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13724" data-codigo="FAC2026A636">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13724">FAC2026A636</a> 
+            
+            
+            
+         </td>
+         <td>
+            PERMIRA ASESORES SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001140" class="cancel_clickable" title="Ver más facturas de PERMIRA ASESORES SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="2 225,43 €">
+            2 225,43 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:54:16">
+            30-04-2026
+         </td>
+         <td class="text-right">
+            30-04-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13723" data-codigo="FAC2026A635">
+         <td class="text-center">
+            
+            
+            <span class="glyphicon glyphicon-remove" title="La factura está anulada"></span>
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13723">FAC2026A635</a> 
+            
+            
+            
+         </td>
+         <td>
+            WINX CAPITAL 2000, S.L
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=002170" class="cancel_clickable" title="Ver más facturas de WINX CAPITAL 2000, S.L">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="3 281,14 €">
+            3 281,14 €
+         </td>
+         
+         <td class="text-right" title="Hora 12:18:11">
+            30-04-2026
+         </td>
+         <td class="text-right">
+            30-04-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13722" data-codigo="FAC2026A634">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13722">FAC2026A634</a> 
+            
+            
+            
+         </td>
+         <td>
+            APEX NOVA EMPRENDEDORES S.L.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=002203" class="cancel_clickable" title="Ver más facturas de APEX NOVA EMPRENDEDORES S.L.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="174,72 €">
+            174,72 €
+         </td>
+         
+         <td class="text-right" title="Hora 12:08:27">
+            30-04-2026
+         </td>
+         <td class="text-right">
+            30-04-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13721" data-codigo="FAC2026R7">
+         <td class="text-center">
+            
+            
+            
+            <span class="glyphicon glyphicon-flag" title="factura rectificativa de FAC2026A502"></span>
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13721">FAC2026R7</a> 
+            
+            
+            
+         </td>
+         <td>
+            SMYLIFE SL
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001557" class="cancel_clickable" title="Ver más facturas de SMYLIFE SL">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="-43,56 €">
+            -43,56 €
+         </td>
+         
+         <td class="text-right" title="Hora 18:17:21">
+            29-04-2026
+         </td>
+         <td class="text-right">
+            29-04-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13720" data-codigo="FAC2026A633">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13720">FAC2026A633</a> 
+            
+            
+            
+         </td>
+         <td>
+            Grupo Sinergia SCDE, S.L.
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=002099" class="cancel_clickable" title="Ver más facturas de Grupo Sinergia SCDE, S.L.">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="129,28 €">
+            129,28 €
+         </td>
+         
+         <td class="text-right" title="Hora 17:33:24">
+            29-04-2026
+         </td>
+         <td class="text-right">
+            29-04-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13719" data-codigo="FAC2026A632">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13719">FAC2026A632</a> 
+            
+            
+            
+         </td>
+         <td>
+            GLARUS IBERICA LOSS &amp; RUN OFF MANAGEMENT
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001314" class="cancel_clickable" title="Ver más facturas de GLARUS IBERICA LOSS &amp; RUN OFF MANAGEMENT">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="121,00 €">
+            121,00 €
+         </td>
+         
+         <td class="text-right" title="Hora 16:38:31">
+            29-04-2026
+         </td>
+         <td class="text-right">
+            29-04-2026
+         </td>
+      </tr>
+      
+      <tr class="clickableRow danger" href="index.php?page=ventas_factura&amp;id=13718" data-codigo="FAC2026A631">
+         <td class="text-center">
+            
+            
+            
+            
+            
+         </td>
+         <td class="text-center">
+            
+         </td>
+         <td>
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_factura&amp;id=13718">FAC2026A631</a> 
+            
+            
+            
+         </td>
+         <td>
+            Zala Capital S.L
+            
+            <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;codcliente=001549" class="cancel_clickable" title="Ver más facturas de Zala Capital S.L">[+]</a>
+            
+            
+         </td>
+         <td class="text-right hidden-sm">
+            <span title="0 documentos adjuntos">
+               
+            </span>
+         </td>
+         <td>-</td>
+         <td class="text-right" title="193,60 €">
+            193,60 €
+         </td>
+         
+         <td class="text-right" title="Hora 13:04:21">
+            29-04-2026
+         </td>
+         <td class="text-right">
+            29-04-2026
+         </td>
+      </tr>
+      
+      
+   </tbody></table>
+</div>
+
+<div class="container-fluid">
+   <div class="row">
+      <div class="col-sm-12 text-center">
+         <ul class="pagination">
+            
+            <li class="active">
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;offset=0">1</a>
+            </li>
+            
+            <li>
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;offset=50">2</a>
+            </li>
+            
+            <li>
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;offset=100">3</a>
+            </li>
+            
+            <li>
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;offset=150">4</a>
+            </li>
+            
+            <li>
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;offset=200">5</a>
+            </li>
+            
+            <li>
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;offset=250">6</a>
+            </li>
+            
+            <li>
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;offset=6600">133</a>
+            </li>
+            
+            <li>
+               <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=todo&amp;query=&amp;codagente=&amp;codalmacen=&amp;codcliente=&amp;codgrupo=&amp;codpago=&amp;codserie=&amp;desde=&amp;estado=&amp;hasta=&amp;offset=13200">265</a>
+            </li>
+            
+         </ul>
+      </div>
+   </div>
+</div>
+
+
+<div class="modal fade" id="modal_huecos">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title">
+               <span class="glyphicon glyphicon-exclamation-sign"></span>
+               &nbsp; Huecos en la facturación
+            </h4>
+            <p class="help-block">
+               Si hay huecos en la facturación es debido a que faltan facturas.
+            </p>
+         </div>
+         <div class="table-responsive">
+            <table class="table table-hover">
+               <thead>
+                  <tr>
+                     <th class="text-center">Código</th>
+                     <th class="text-center">Fecha y hora</th>
+                  </tr>
+               </thead>
+               
+               <tbody><tr class="warning">
+                  <td class="text-center">FAC2024A531</td>
+                  <td class="text-center">22-04-2024 18:15:14</td>
+               </tr>
+               
+            </tbody></table>
+         </div>
+      </div>
+   </div>
+</div>
+
+<form class="form" role="form" id="f_buscar_lineas" name="f_buscar_lineas" action="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas" method="post">
+   <div class="modal" id="modal_buscar_lineas">
+      <div class="modal-dialog" style="width: 99%; max-width: 950px;">
+         <div class="modal-content">
+            <div class="modal-header">
+               <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+               <h4 class="modal-title">Buscar en las líneas</h4>
+               
+               <p class="help-block">Si quieres, puede <a href="https://pacioli.greconsult.com/e/B81813636/index.php?page=ventas_facturas&amp;mostrar=buscar">filtrar por cliente</a>.</p>
+               
+            </div>
+            <div class="modal-body">
+               
+               <div class="input-group">
+                  <input class="form-control" type="text" name="buscar_lineas" placeholder="Referencia" autocomplete="off">
+                  <span class="input-group-btn">
+                     <button class="btn btn-primary" type="submit">
+                        <span class="glyphicon glyphicon-search"></span>
+                     </button>
+                  </span>
+               </div>
+               
+            </div>
+            <div id="search_results" class="table-responsive"></div>
+         </div>
+      </div>
+   </div>
+</form>
+
+   
+   <hr style="margin-top: 50px;" class="hidden-print">
+   
+   <div class="container-fluid hidden-print" style="margin-bottom: 10px;">
+      <div class="row">
+         <div class="col-sm-12">
+            
+               <div class="hidden">
+               
+                  
+                  <iframe src="./Facturas ‹ RCM_files/index.html"></iframe>
+                  
+               
+                  
+               
+                  
+               
+               </div>
+            
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-4 col-xs-6">
+            <small>
+               Creado con FacturaScripts.
+            </small>
+         </div>
+         <div class="col-sm-4 hidden-xs text-center">
+            <span class="label label-default">Consultas: 71</span>
+            <span class="label label-default">Transacciones: 3</span>
+         </div>
+         <div class="col-sm-4 col-xs-6 text-right">
+            <span class="label label-default">
+               <i class="fa fa-clock-o" aria-hidden="true" title="Página procesada en 0.073 s"></i>
+               &nbsp;0.073 s
+            </span>
+         </div>
+      </div>
+   </div>
+   
+
+</body></html>
